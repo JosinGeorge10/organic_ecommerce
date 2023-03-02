@@ -79,3 +79,25 @@ header div.social ul li:last-child {
 }
 header div.social span {
 }
+div.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+div.contacts div.items {
+  display: flex;
+}
+div.contacts div.items div.item {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+div.contacts div.items div.item div.left {
+}
+div.contacts div.items div.item div.left img {
+}
+div.contacts div.items div.item div.right {
+}
+div.contacts div.items div.item div.right a {
+}
+div.contacts div.items div.item div.right a.social {
+}
