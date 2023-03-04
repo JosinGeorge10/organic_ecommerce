@@ -383,14 +383,16 @@ section#category section.wrapper div.categories ul li h5 {
   margin: 0 auto;
 }
 #gallery section.wrapper {
+  height: 100vh;
 }
 #gallery section.wrapper section.container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 98%;
+  height: 82%;
 }
 #gallery section.wrapper section.container div.left {
-  width: 63%;
+  width: 61%;
 }
 
 #gallery section.wrapper section.container div.left div.top {
@@ -398,6 +400,7 @@ section#category section.wrapper div.categories ul li h5 {
   background-size: cover;
   display: flex;
   justify-content: space-between;
+  height: 47%;
 }
 #gallery section.wrapper section.container div.left div.top div.top_left {
   padding-top: 20px;
@@ -447,7 +450,7 @@ section#category section.wrapper div.categories ul li h5 {
 }
 #gallery section.wrapper section.container div.left div.top_right {
   width: 50%;
-  padding: 10px 0;
+  padding: 37px 20px;
 }
 #gallery
   section.wrapper
@@ -464,25 +467,27 @@ section#category section.wrapper div.categories ul li h5 {
 }
 
 #gallery section.wrapper section.container div.left div.top_right {
-  width: 50%;
+  width: 19%;
 }
 #gallery section.wrapper section.container div.left div.top_right a.button {
-  padding: 25px 5px;
+  padding: 31px 32px;
   background: #fff;
-  border-radius: 50%;
+  border-radius: 62%;
   display: inline-block;
-  width: 50px;
+  width: 100px;
+  font-weight: bold;
 }
 
 #gallery section.wrapper section.container div.bottom {
   margin-top: 20px;
   width: 100%;
-  height: 49%;
+  height: 41%;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 71px;
 }
 #gallery section.wrapper section.container div.bottom div.bottom_left {
-  width: 49%;
+  width: 45%;
   background: url("../Assets/All-Smoothie.jpg") no-repeat;
   background-size: cover;
 }
@@ -543,9 +548,9 @@ section#category section.wrapper div.categories ul li h5 {
 
 #gallery section.wrapper section.container div.right {
   width: 35%;
-
   background: url("../Assets/Sale-img-kiwi.jpg") no-repeat;
   background-size: cover;
+  height: 90%;
 }
 #gallery section.wrapper section.container div.right h2 {
   margin-left: 20px;
@@ -563,4 +568,11 @@ section#category section.wrapper div.categories ul li h5 {
   color: #979aa0;
   margin-left: 20px;
   margin-top: 20px;
+}
+section#products {
+  width: 90%;
+  margin: 0 auto;
+}
+#products div.product {
+  display: flex;
 }
