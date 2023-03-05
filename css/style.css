@@ -61,6 +61,93 @@ br.clear {
   clear: both;
   line-height: 0;
 }
+@font-face {
+  font-family: "Island Moments";
+  src: url("../fonts/IslandMoments-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-ExtraBold"
+  src: url("../fonts/Inter-ExtraBold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-ExtraLight";
+  src: url("../fonts/Inter-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url("../fonts/Inter-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-Black";
+  src: url("../fonts/Inter-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter_Regular";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter_SemiBold";
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter_Thin";
+  src: url("../fonts/Inter-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter_Regular";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 header {
   padding: 40px;
 }
@@ -73,11 +160,15 @@ header div.social ul {
 }
 header div.social ul li {
   margin-right: 20px;
+  font-family:"Inter_SemiBold";
+  font-size: small;
 }
 header div.social ul li:last-child {
   margin-right: 0px;
 }
 header div.social span {
+  font-family:"Inter_SemiBold";
+
 }
 div.contacts {
   display: flex;
@@ -106,8 +197,8 @@ div.contacts div.items div.item div.right {
 }
 div.contacts div.items div.item div.right a {
   font-size: 13px;
-  font-weight: bold;
   display: block;
+  font-family: "Inter_SemiBold";
 }
 div.contacts div.items div.item div.right a.social {
   font-size: 15px;
@@ -175,31 +266,43 @@ header div.bottom div.middle.right h1 a {
   font-size: 15px;
   margin-right: 5px;
   font-weight: 500;
+  font-family: "Inter_SemiBold";
 }
 
 header div.bottom div.middle.right img {
   display: block;
   width: 75%;
 }
+header div.contacts div.search {
+  font-family:"Inter_SemiBold";
+  
+}
 section.spotlight {
-  padding: 80px 0;
+  /* padding: 159px 0; */
   background: url(/Assets/Landing-Background.jpg);
+  height: 78vh;
 }
 
 section.spotlight section.wrapper {
+  height: 73vh;
 }
 
 section.spotlight section.wrapper section.image_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60vh;
 }
 
 section.spotlight section.wrapper section.image_container div.first_image {
   background: url("../Assets/Landing-img-1.jpg") no-repeat;
   background-size: cover;
-  width: 47%;
+  width: 45%;
   position: relative;
-  margin-left: 9%;
+  /* margin-top: 137px; */
+  /* margin-left: 9%; */
+  top: 67px;
+  height: 47vh;
 }
 
 section.spotlight
@@ -286,8 +389,12 @@ section.spotlight
 section.spotlight section.wrapper section.image_container div.second_image {
   background: url("../Assets/Landing-img-2.jpg") no-repeat;
   background-size: cover;
-  width: 37%;
-  margin-right: 42px;
+  width: 26%;
+  margin-right: 58px;
+  height: 46vh;
+  position: relative;
+  left: -118px;
+  top: 65px;
 }
 
 section.spotlight
@@ -376,14 +483,15 @@ section#category section.wrapper div.categories ul li a img {
 section#category section.wrapper div.categories ul li h5 {
   text-align: center;
   margin-top: 15px;
+  font-family: "Inter_SemiBold";
+  font-size: 15px;
 }
 #gallery {
-  padding: 80px 0;
   width: 90%;
   margin: 0 auto;
 }
 #gallery section.wrapper {
-  height: 100vh;
+  height: 87vh;
 }
 #gallery section.wrapper section.container {
   display: flex;
@@ -392,7 +500,7 @@ section#category section.wrapper div.categories ul li h5 {
   height: 82%;
 }
 #gallery section.wrapper section.container div.left {
-  width: 61%;
+  width: 60%;
 }
 
 #gallery section.wrapper section.container div.left div.top {
@@ -409,7 +517,7 @@ section#category section.wrapper div.categories ul li h5 {
   color: #fff;
 }
 #gallery section.wrapper section.container div.left div.top div.top_left h1 {
-  font-size: 26px;
+  font-size: 37px;
 }
 #gallery section.wrapper section.container div.left div.top div.top_left h3 {
   font-size: 26px;
@@ -470,12 +578,13 @@ section#category section.wrapper div.categories ul li h5 {
   width: 19%;
 }
 #gallery section.wrapper section.container div.left div.top_right a.button {
-  padding: 31px 32px;
+  padding: 26px 32px;
   background: #fff;
-  border-radius: 62%;
+  border-radius: 61%;
   display: inline-block;
   width: 100px;
   font-weight: bold;
+  font-size: 19px;
 }
 
 #gallery section.wrapper section.container div.bottom {
@@ -569,10 +678,825 @@ section#category section.wrapper div.categories ul li h5 {
   margin-left: 20px;
   margin-top: 20px;
 }
-section#products {
+#our_products {
+  /* padding: 40px 0; */
+  padding: 21px 0;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -147px;
+}
+#our_products section.wrapper {
+}
+#our_products section.wrapper section.product {
+}
+#our_products section.wrapper section.product div.top {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+#our_products section.wrapper section.product div.top div.left {
+  border-left: 2px solid #253858;
+}
+#our_products section.wrapper section.product div.top div.left h2 {
+  font-size: 24px;
+  color: #000;
+  padding: 10px;
+  font-family: "Inter_SemiBold";
+}
+#our_products section.wrapper section.product div.top div.right {
+}
+#our_products section.wrapper section.product div.top div.right ul {
+  display: flex;
+  justify-content: space-between;
+}
+#our_products section.wrapper section.product div.top div.right ul li {
+  margin-right: 20px;
+}
+#our_products
+  section.wrapper
+  section.product
+  div.top
+  div.right
+  ul
+  li:last-child {
+  margin-right: 0;
+}
+
+#our_products section.wrapper section.product div.top div.right ul li a {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Inter_SemiBold";
+}
+
+section#our_products section.wrapper section.product div.bottom {
+  margin-top: 60px;
+}
+
+section#our_products section.wrapper section.product div.bottom ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+section#our_products section.wrapper section.product div.bottom ul li {
+  background: #f7faff;
+
+  width: 18%;
+  margin-bottom: 10px;
+}
+
+section#our_products section.wrapper section.product div.bottom ul li a.button {
+  padding: 0px 20px;
+  background: #cc1a1a;
+  color: #fff;
+  border-radius: 22px;
+  font-size: 21px;
+  text-align: left;
+  font-family: "Inter_Regular";
+}
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li:nth-child(2)
+  a.button {
+  display: none;
+}
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li:nth-child(4)
+  a.button {
+  display: none;
+}
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li:nth-child(7)
+  a.button {
+  display: none;
+}
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li:nth-child(9)
+  a.button {
+  display: none;
+}
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li:nth-child(5)
+  a.button {
+  padding: 1px 15px;
+  background: #a6a6a6;
+  color: #fff;
+  font-size: 19px;
+  text-align: left;
+  font-family: "Inter_Regular";
+}
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li:nth-child(10)
+  a.button {
+  padding: 2px 15px;
+  background: #a6a6a6;
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+  font-family: "Inter_Regular";
+}
+
+section#our_products section.wrapper section.product div.bottom ul li div.img {
+  width: 100px;
+  margin: 0px auto 30px;
+}
+
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li
+  div.img
+  img {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li:nth-child(2)
+  div.img
+  img {
+  margin-top: 40px;
+}
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li:nth-child(4)
+  div.img
+  img {
+  margin-top: 40px;
+}
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li:nth-child(7)
+  div.img
+  img {
+  margin-top: 40px;
+}
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li:nth-child(9)
+  div.img
+  img {
+  margin-top: 40px;
+}
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li:nth-child(5)
+  div.img
+  img {
+  margin-top: 40px;
+}
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li:nth-child(10)div.img
+  img {
+  margin-top: 40px;
+}
+
+section#our_products section.wrapper section.product div.bottom ul li h3 {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Inter_Regular";
+}
+
+section#our_products section.wrapper section.product div.bottom ul li ul {
+  display: flex;
+  justify-content: revert;
+  justify-content: center;
+}
+
+section#our_products section.wrapper section.product div.bottom ul li ul li {
+  width: 6%;
+}
+
+section#our_products
+  section.wrapper
+  section.product
+  div.bottom
+  ul
+  li
+  ul
+  li
+  img {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+section#our_products section.wrapper section.product div.bottom ul li span {
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #e3e3e3;
+  font-size: 12px;
+}
+section.services {
+  padding: 60px 0;
+
   width: 90%;
   margin: 0 auto;
 }
-#products div.product {
+
+section.services section.wrapper {
+}
+
+section.services section.wrapper section.container {
+}
+
+section.services section.wrapper section.container ul {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.services section.wrapper section.container ul li {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  border-right: 2px solid #878787;
+  margin-left: 40px;
+  height: 20px;
+}
+section.services section.wrapper section.container ul li:last-child {
+  border-right: none;
+}
+
+section.services section.wrapper section.container ul li div.imag {
+  margin-right: 15px;
+  width: 30%;
+}
+
+section.services section.wrapper section.container ul li div.imag img {
+  display: block;
+  width: 100%;
+}
+
+section.services section.wrapper section.container ul li div.text {
+}
+
+section.services section.wrapper section.container ul li div.text h2 {
+  font-size: 15px;
+  color: #9a9a9a;
+  font-family: "Inter_SemiBold";
+}
+
+section.services section.wrapper section.container ul li div.text h3 {
+  font-size: 10px;
+  color: #8e8e8e;
+  font-family: "Inter_SemiBold";
+}
+section#testimonial {
+  padding: 60px 0;
+
+  width: 90%;
+  margin: 0 auto;
+}
+
+section#testimonial section.wrapper {
+}
+
+section#testimonial section.wrapper section.container {
+  background: #f7faff;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+section#testimonial section.wrapper section.container div.left {
+  display: flex;
+  justify-content: start;
+}
+
+section#testimonial section.wrapper section.container div.left div.arrow_left {
+}
+
+section#testimonial
+  section.wrapper
+  section.container
+  div.left
+  div.arrow_left
+  img {
+  display: block;
+  width: 100%;
+}
+
+section#testimonial section.wrapper section.container div.middle {
+  width: 100%;
+  text-align: center;
+}
+
+section#testimonial section.wrapper section.container div.middle div.top {
+  width: 50%;
+  margin: 20px auto;
+
+  text-align: center;
+}
+
+section#testimonial
+  section.wrapper
+  section.container
+  div.middle
+  div.top
+  div.quotes {
+  width: 50px;
+  margin: 0 auto;
+}
+
+section#testimonial
+  section.wrapper
+  section.container
+  div.middle
+  div.top
+  div.quotes
+  img {
+  display: block;
+  width: 100%;
+}
+
+section#testimonial section.wrapper section.container div.middle div.top h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 20px;
+  font-family: "Inter_Regular";
+}
+
+section#testimonial section.wrapper section.container div.middle div.top p {
+  font-size: 16px;
+  color: #a6a6a6;
+  font-family: "inter_regular";
+  margin-top: 20px;
+}
+
+section#testimonial section.wrapper section.container div.middle div.bottom {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin-left: 47%;
+}
+
+section#testimonial
+  section.wrapper
+  section.container
+  div.middle
+  div.bottom
+  div.pic {
+}
+
+section#testimonial
+  section.wrapper
+  section.container
+  div.middle
+  div.bottom
+  div.pic
+  img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 20px 0 40px;
+}
+
+section#testimonial
+  section.wrapper
+  section.container
+  div.middle
+  div.bottom
+  div.idtity {
+}
+
+section#testimonial
+  section.wrapper
+  section.container
+  div.middle
+  div.bottom
+  div.idtity
+  h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+section#testimonial
+  section.wrapper
+  section.container
+  div.middle
+  div.bottom
+  div.idtity
+  p {
+  font-size: 12px;
+  color: #979aa0;
+}
+
+section#testimonial section.wrapper section.container div.right {
+  display: flex;
+  justify-content: end;
+}
+
+section#testimonial
+  section.wrapper
+  section.container
+  div.right
+  div.arrow_right {
+}
+
+section#testimonial
+  section.wrapper
+  section.container
+  div.right
+  div.arrow_right
+  img {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+section#best_seller {
+  padding: 20px 0;
+
+  width: 90%;
+  margin: 0 auto;
+}
+
+section#best_seller section.wrapper {
+}
+
+section#best_seller section.wrapper div.top {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+section#best_seller section.wrapper div.top div.left {
+  border-left: 2px solid #253858;
+}
+
+section#best_seller section.wrapper div.top div.left h2 {
+}
+
+section#best_seller section.wrapper div.top div.left h2 a {
+  font-size: 24px;
+  color: #000;
+  padding: 10px;
+  font-family: "Inter_SemiBold";
+}
+
+section#best_seller section.wrapper div.top div.right {
+}
+
+section#best_seller section.wrapper div.top div.right h3 {
+}
+
+section#best_seller section.wrapper div.top div.right h3 a {
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #5ca26e;
+  color: #5ca26e;
+  font-family: "Inter_SemiBold";
+}
+
+section#best_seller section.wrapper div.bottom {
+  width: 100%;
+}
+
+section#best_seller section.wrapper div.bottom ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+section#best_seller section.wrapper div.bottom ul {
+}
+
+section#best_seller section.wrapper div.bottom ul li {
+  background: #f7faff;
+  width: 18%;
+  margin-bottom: 10px;
+}
+
+section#best_seller section.wrapper div.bottom ul li a.button {
+  padding: 3px 16px;
+  background: #cc1a1a;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 18px;
+  text-align: left;
+  font-family: "Inter_Regular";
+}
+section#best_seller section.wrapper div.bottom ul li:nth-child(2) a.button {
+  display: none;
+}
+section#best_seller section.wrapper div.bottom ul li:nth-child(4) a.button {
+  display: none;
+}
+section#best_seller section.wrapper div.bottom ul li:nth-child(5) a.button {
+  padding: 3px 15px;
+  background: #a6a6a6;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 18px;
+  text-align: left;
+  font-family: "Inter_Regular";
+}
+
+section#best_seller section.wrapper div.bottom ul li div.img {
+  width: 100px;
+  margin: 0px auto 30px;
+}
+
+section#best_seller section.wrapper div.bottom ul li div.img img {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+section#best_seller section.wrapper div.bottom ul li:nth-child(2) div.img {
+  margin-top: 40px;
+}
+section#best_seller section.wrapper div.bottom ul li:nth-child(4) div.img {
+  margin-top: 40px;
+}
+
+section#best_seller section.wrapper div.bottom ul li h3 {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Inter_Regular";
+}
+
+section#best_seller section.wrapper div.bottom ul li ul {
+  display: flex;
+  justify-content: revert;
+  justify-content: center;
+}
+
+section#best_seller section.wrapper div.bottom ul li ul li {
+  width: 6%;
+}
+
+section#best_seller section.wrapper div.bottom ul li ul li img {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+section#best_seller section.wrapper div.bottom ul li span {
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #e3e3e3;
+  font-size: 12px;
+}
+section.brand {
+  padding: 50px 0;
+
+  width: 90%;
+  margin: 0 auto;
+}
+
+section.brand section.wrapper {
+}
+
+section.brand section.wrapper ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.brand section.wrapper ul li {
+  width: 15%;
+}
+
+section.brand section.wrapper ul li img {
+  display: block;
+  width: 100%;
+}
+section#banner {
+  padding: 60px 0;
+
+  width: 90%;
+  margin: 0 auto;
+}
+
+section#banner section.wrapper {
+}
+
+section#banner section.wrapper div.main {
+  background: url("../Assets/Free-Shipping.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  height: 546px;
+}
+
+section#banner section.wrapper div.main div.left_content {
+  width: 40%;
+  padding: 109px;
+}
+
+section#banner section.wrapper div.main div.left_content h1 {
+  font-size: 55px;
+  font-weight: 700;
+  font-family: "Inter_Regular";
+  margin-bottom: 20px;
+}
+
+section#banner section.wrapper div.main div.left_content p {
+  font-family: "Inter_Regular";
+  font-size: 23px;
+  color: #8e8e8e;
+  margin-bottom: 50px;
+}
+
+section#banner section.wrapper div.main div.left_content a.button {
+  padding: 15px 25px;
+  display: inline-block;
+  color: #c8c8c8;
+  background: #5ca26e;
+  margin-bottom: 30px;
+  font-family: "Inter_Regular";
+}
+footer {
+  padding: 80px 0;
+
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer section.wrapper {
+}
+
+footer section.wrapper div.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section.wrapper div.content div.left {
+}
+
+footer section.wrapper div.content div.left h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #5ca26e;
+  font-family: "Inter_SemiBold";
+}
+
+footer section.wrapper div.content div.left div.media {
+}
+
+footer section.wrapper div.content div.left div.media ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section.wrapper div.content div.left div.media ul li {
+}
+
+footer section.wrapper div.content div.left div.media ul li a {
+}
+
+footer section.wrapper div.content div.left div.media ul li a img {
+  display: block;
+  width: 100%;
+}
+
+footer section.wrapper div.content div.left div.media div.copyright {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+footer section.wrapper div.content div.left div.media div.copyright img {
+  display: inline-block;
+}
+
+footer section.wrapper div.content div.left div.media div.copyright p {
+  font-size: 12px;
+  font-family: "Inter_SemiBold";
+}
+
+footer section.wrapper div.content div.middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section.wrapper div.content div.middle div.middle-left {
+  margin-right: 100px;
+}
+
+footer section.wrapper div.content div.middle div.middle-left h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Inter_SemiBold";
+}
+
+footer section.wrapper div.content div.middle div.middle-left ul {
+}
+
+footer section.wrapper div.content div.middle div.middle-left ul li {
+  margin-bottom: 22px;
+}
+footer section.wrapper div.content div.middle div.middle-left ul li:last-child {
+  margin-bottom: 0;
+}
+
+footer section.wrapper div.content div.middle div.middle-left ul li a {
+  font-family: "Inter_Regular";
+  color: #a6a6a6;
+}
+
+footer section.wrapper div.content div.middle div.middle-right {
+}
+
+footer section.wrapper div.content div.middle div.middle-right h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.9;
+  font-family: "Inter_SemiBold";
+}
+
+footer section.wrapper div.content div.middle div.middle-right p {
+  font-family: "Inter_Regular";
+  color: #a6a6a6;
+  margin-bottom: 22px;
+}
+
+footer section.wrapper div.content div.middle div.middle-right h4 {
+  font-family: "Inter_Regular";
+  color: #a6a6a6;
+  margin-bottom: 22px;
+}
+
+footer section.wrapper div.content div.middle div.middle-right h5 {
+  font-family: "Inter_Regular";
+  color: #a6a6a6;
+}
+footer section.wrapper div.content div.right {
+}
+footer section.wrapper div.content div.right h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Inter_SemiBold";
+}
+footer section.wrapper div.content div.right div.payment {
+}
+footer section.wrapper div.content div.right ul.card_pay {
+  display: flex;
+}
+footer section.wrapper div.content div.right ul.card_pay li {
+}
+footer section.wrapper div.content div.right ul.card_pay li a {
+}
+footer section.wrapper div.content div.right ul.online_pay {
+  display: flex;
+}
+footer section.wrapper div.content div.right ul.online_pay li {
+}
+footer section.wrapper div.content div.right ul.online_pay li a {
+}
+footer section.wrapper div.content div.right ul.online_pay li a img {
+  display: block;
+  width: 100%;
 }
