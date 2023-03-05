@@ -1500,6 +1500,167 @@ footer section.wrapper div.content div.right ul.online_pay li a img {
   display: block;
   width: 100%;
 }
+
 @media all and (max-width:1280px){
+  section.spotlight section.wrapper section.image_container div.second_image {
+  
+    width: 46%;
+    margin-right: 58px;
+    height: 47vh;
+  
+    left: 31px;
+    top: 65px;
+}
+#gallery section.wrapper section.container div.left div.top_right {
+  width: 26%;
+}
+#gallery section.wrapper section.container {
+  width: 100%;
+}
+#gallery section.wrapper {
+  height: 64vh;
+}
+#gallery section.wrapper section.container div.right {
+
+  height: 92%;
+}
+#our_products {
+
+  margin-top: -111px;
+}
+section#banner section.wrapper div.main {
+
+  height: 435px;
+}
+section#banner section.wrapper div.main div.left_content {
+  width: 52%;
+  padding: 21px;
+}
+section#testimonial section.wrapper section.container div.middle div.bottom {
+
+  margin-left: 36%;
+}
+}
+@media all and (max-width:1080px){
+  #gallery section.wrapper {
+    height: 57vh;
+}
+#gallery section.wrapper section.container div.bottom {
+ 
+  gap: 30px;
+}
+#gallery section.wrapper section.container div.bottom div.bottom_right a.button {
+  padding: 10px 23px;
+ 
+  margin-bottom: -8px;
+  margin-top: 1px;
+  margin-left: 19px;
+}
+section#banner section.wrapper div.main div.left_content a.button {
+  padding: 8px 26px;
+  margin-bottom: 30px;
+ 
+}
+footer section.wrapper div.content div.middle div.middle-left {
+  margin-right: 35px;
+}
+footer section.wrapper div.content div.right {
+  padding-top: 10px;
+}
+}
+@media all and (max-width:980px){
+  header div.bottom div.middle nav {
+    margin-right: -53px;
+}
+section#category section.wrapper div.categories ul li a img {
+  display: block;
+  width: 48%;
+}
+section#category section.wrapper div.categories ul li h5 {
+
+  font-size: 12px;
+}
+#gallery section.wrapper section.container div.left div.top_right {
+  width: 32%;
+}
+#gallery section.wrapper {
+  height: 47vh;
+}
+#gallery section.wrapper section.container div.left div.top div.top_left h1 {
+  font-size: 20px;
+}
+#gallery section.wrapper section.container div.bottom div.bottom_left h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#gallery section.wrapper section.container div.bottom div.bottom_right h1 {
+  font-size: 18px;
+  margin-top: 0px;
+  
+  margin-left: 20px;
+}
+#our_products {
+  margin-top: -80px;
+}
+section#our_products section.wrapper section.product div.bottom ul li:nth-child(5) a.button {
+  padding: 0px 15px;
+
+  font-size: 16px;
+  
+}
+section#our_products section.wrapper section.product div.bottom ul li a.button {
+  padding: 0px 20px;
+ 
+  border-radius: 22px;
+  font-size: 17px;
+ 
+}
+section#our_products section.wrapper section.product div.bottom ul li:nth-child(10) a.button {
+  padding: -1px 15px;
+
+  font-size: 14px;
+ 
+}
+section.services {
+
+  width: 97%;
+ 
+}
+section#testimonial section.wrapper section.container div.middle div.top p {
+  font-size: 12px;
+ 
+}
+section#testimonial section.wrapper section.container div.middle div.bottom {
+  margin-left: 28%;
+}
+section#best_seller section.wrapper div.bottom ul li:nth-child(5) a.button {
+
+  border-radius: 20px;
+  font-size: 15px;
+  
+}
+section#banner section.wrapper div.main div.left_content h1 {
+  font-size: 38px;
+}
+
+footer section.wrapper div.content div.middle div.middle-left {
+  margin-right: -3px;
+}
+footer section.wrapper div.content div.left div.media ul li {
+  margin-right: 14px;
+}
+section#banner {
+  padding: 37px 0;
+  width: 88%;
 
 }
+section#banner section.wrapper div.main div.left_content p {
+
+  font-size: 18px;
+
+}
+
+}
+
+
